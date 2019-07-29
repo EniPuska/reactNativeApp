@@ -5,28 +5,39 @@ import { Input, Button } from 'react-native-elements';
 export default class App extends Component {
   state = {
     username: '',
-    password:''
+    password:'',
+    loginDetails:{}
   }
 
-  inputChangeHandler = (value) => {
-    this.setState({username:value});
+  inputChangeHandler = (value,type) => {
+    if(type == 1) {
+      this.setState({username:value});
+    } else {
+      this.setState({password:value});
+    }
+    
   }
 
   loginAction = () => {
-    console.log(this.state.username);
+    this.state.loginDetails.username = this.state.username;
+    this.state.loginDetails.password = this.state.password;
+    console.log(this.state.loginDetails);
   }
+  
   render() {
     return (
       <View style={styles.container}>
         <Text>Username</Text>
         <Input 
           value = {this.state.username}
-          onChangeText = {this.inputChangeHandler}
+          name = 'username'
+          onChangeText = {(value) => this.inputChangeHandler(value,1)}
         />
         <Text>Password</Text>
         <Input 
           value = {this.state.password}
-          onChangeText = {this.inputChangeHandler}
+          name = 'password'
+          onChangeText = {(value) => this.inputChangeHandler(value,2)}
         />
         <Button
           title = 'Login'
