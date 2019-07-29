@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 9616,
-  "expoServerNgrokUrl": "https://8d-4mk.anonymous.reactnativeexample.exp.direct",
-  "packagerNgrokUrl": "https://packager.8d-4mk.anonymous.reactnativeexample.exp.direct",
-  "ngrokPid": 9048
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }
