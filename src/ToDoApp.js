@@ -4,8 +4,8 @@ import AddToDo from './containers/addToDo';
 class TodoApp extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <AddToDo/>
+            <View style={styles.container}>    
+                <Text>Test</Text>
             </View>
         );
     }

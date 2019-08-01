@@ -4,8 +4,7 @@ class TodoApp extends Component {
     render() {
         return (
             <View style={styles.addInputView}>
-                <Text>Test</Text>
-                <TextInput/>  
+                <Text>Test</Text>W
             </View>
         );
     }
